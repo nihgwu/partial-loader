@@ -33,22 +33,22 @@ module.exports = {
 
 ### Options
 
-- `template` - the content of template.
+- `template` - the content of template, should include the `placeholder` to be replaced.
 - `templatePath` - absolute path of the template file, `template` will be ignored if provided.
-- `placeholder` - placeholder to be replaced, defaults to `/*** placeholder ***/`
+- `placeholder` - placeholder to be replaced, defaults to `/*** placeholder ***/`.
 
 ## Example
 
-1.  template
+1. template
 
 ```javascript
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 /*** placeholder ***/
 ```
 
-2.  code
+2. code
 
 ```javascript
 const Button = styled.button`
@@ -58,17 +58,16 @@ const Button = styled.button`
   background: transparent;
   color: palevioletred;
   border: 2px solid palevioletred;
-`;
+`
 
 export default Button
-`
 ```
 
-3.  transformed
+3. transformed
 
 ```javascript
 import React from 'react'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const Button = styled.button`
   border-radius: 3px;
@@ -81,3 +80,7 @@ const Button = styled.button`
 
 export default Button
 ```
+
+## License
+
+MIT © [Neo](https://github.com/nihgwu)
