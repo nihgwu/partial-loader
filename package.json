@@ -1,6 +1,6 @@
 {
   "name": "partial-loader",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "partial loader for webpack",
   "main": "index.js",
   "files": [
@@ -8,7 +8,7 @@
   ],
   "homepage": "https://github.com/nihgwu/partial-loader",
   "repository": "https://github.com/nihgwu/partial-loader.git",
-  "author": "Neo <nihgwu@live.com>",
+  "author": "Neo Nie <nihgwu@live.com>",
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^1.1.0"
