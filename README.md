@@ -1,6 +1,6 @@
 # partial-loader
 
-partial loader for webpack, transform your partial file with a template
+partial loader for webpack, transform your partial file with template
 
 ## Install
 
@@ -33,7 +33,8 @@ module.exports = {
 
 ### Options
 
-- `templatePath` - _required_, absolute path of the template file.
+- `template` - the content of template.
+- `templatePath` - absolute path of the template file, `template` will be ignored if provided.
 - `placeholder` - placeholder to be replaced, defaults to `/*** placeholder ***/`
 
 ## Example

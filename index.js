@@ -26,10 +26,15 @@ module.exports = function(source) {
 
   var callback = this.async()
   var options = loaderUtils.getOptions(this) || {}
+  var template = options.template
   var templatePath = options.templatePath
   var placeholder = options.placeholder || '/*** placeholder ***/'
 
-  if (!templatePath) return callback(null, source)
+  if (!template && !templatePath) return callback(null, source)
+
+  if (!templatePath) {
+    return callback(null, compile(template, source, placeholder))
+  }
 
   this.addDependency(templatePath)
 
